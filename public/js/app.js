@@ -30,7 +30,7 @@ weatherForm.addEventListener('submit', (e) => {
                 messageOne.textContent = data.error
             } else {
                 messageOne.textContent = data.error
-                messageTwo.textContent = data.location                
+                messageTwo.textContent = data.location.name               
             }
         })
     })
@@ -56,17 +56,17 @@ weatherForm.addEventListener('submit', (e) => {
 
         objlocation = JSON.parse(contenidojson)
         
-        clima1.textContent = 'Ciudad' + objlocation.location.name
-        clima2.textContent = 'País' + objlocation.location.country
-        clima3.textContent = 'Hora actual' + objlocation.current.observation_time
-        clima4.textContent = 'Temperatura: ' + objlocation.current.temperature
-        clima5.textContent = 'Codigo: ' + objlocation.current.weather_code
+        clima1.textContent = '<h2>Ciudad:</h2> ' + objlocation.location.name
+        clima2.textContent = '<h2>País: </h2>' + objlocation.location.country
+        clima3.textContent = '<h2>Hora actual: </h2>' + objlocation.current.observation_time
+        clima4.textContent = '<h2>Temperatura: </h2>' + objlocation.current.temperature
+        clima5.textContent = '<h2>Codigo: </h2>' + objlocation.current.weather_code
 //        clima6.textContent = objlocation.current.weather_icons
-        clima6.textContent = 'Clima:' + objlocation.current.weather_descriptions
-        clima7.textContent = 'Velocidad del viento: ' + objlocation.current.wind_speed
-        clima8.textContent = 'Dirección del viento:' + objlocation.current.wind_dir
-        clima9.textContent = 'Humedad:' + objlocation.current.humidity
-        clima10.textContent = 'Porcentaje de nubes:' + objlocation.current.cloudcover
+        clima6.textContent = '<h2>Clima: </h2>' + objlocation.current.weather_descriptions
+        clima7.textContent = '<h2>Velocidad del viento: </h2>' + objlocation.current.wind_speed
+        clima8.textContent = '<h2>Dirección del viento: </h2>' + objlocation.current.wind_dir
+        clima9.textContent = '<h2>Humedad: </h2>' + objlocation.current.humidity
+        clima10.textContent = '<h2>Porcentaje de nubes: </h2>' + objlocation.current.cloudcover
 
 
         console.log(objlocation.location.name)
