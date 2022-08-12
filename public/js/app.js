@@ -43,7 +43,7 @@ weatherForm.addEventListener('submit', (e) => {
         console.log(objlocation.current.temperature)
         console.log(objlocation.current.weather_code)
         console.log(objlocation.current.weather_icons)
-        console.log(objlocation.current.weather_descriptions.0)
+        console.log(objlocation.current.weather_descriptions)
         console.log(objlocation.current.wind_speed)
         console.log(objlocation.current.wind_dir)
         console.log(objlocation.current.humidity)
