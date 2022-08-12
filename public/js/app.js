@@ -24,4 +24,20 @@ weatherForm.addEventListener('submit', (e) => {
             }
         })
     })
+
+
+
+//opcion2
+
+var requestOptions = {
+    method: 'POST',
+    redirect: 'follow'
+  };
+  
+  fetch('http://api.weatherstack.com/current?access_key=efb94ed60531139ab798b85c3653fbd0&query=' + location, requestOptions)
+    .then(response => response.text())
+    .then(result => console.log(result))
+    .catch(error => console.log('error', error));
+
+
 })
