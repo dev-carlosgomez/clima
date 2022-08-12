@@ -4,6 +4,7 @@ const messageOne = document.querySelector('#message-1')
 const messageTwo = document.querySelector('#message-2')
 const messagetres = document.querySelector('#message-3')
 const messagecuatro = document.querySelector('#message-4')
+const contenidojson = 0
 
 weatherForm.addEventListener('submit', (e) => {
     e.preventDefault()
@@ -35,11 +36,11 @@ weatherForm.addEventListener('submit', (e) => {
       fetch('http://api.weatherstack.com/current?access_key=efb94ed60531139ab798b85c3653fbd0&query=' + location, requestOptions)
       .then(response => response.text())
       .then(result => 
-        messagetres.textContent = result.request
+        contenidojson = result
         )
       .catch(error => console.log('error', error));
         console.log("Respuesta: ")
-        console.log(result)
+        console.log(contenidojson)
 
 
 })
