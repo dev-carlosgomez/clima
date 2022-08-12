@@ -39,7 +39,7 @@ weatherForm.addEventListener('submit', (e) => {
         )
       .catch(error => console.log('error', error));
 
-
+        console.log("Hola Mundo")
 
 
 })
