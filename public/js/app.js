@@ -34,16 +34,16 @@ weatherForm.addEventListener('submit', (e) => {
         console.log(contenidojson)
 
         objlocation = JSON.parse(contenidojson)
-        messagetres.textContent = objlocation.location
+        messagetres.textContent = objlocation
         messagecuatro.textContent = '...'
         
         console.log(objlocation.location.name)
         console.log(objlocation.location.country)
         console.log(objlocation.current.observation_time)
         console.log(objlocation.current.temperature)
-        console.log(objlocation.current.whether_code)
-        console.log(objlocation.current.whether_icons)
-        console.log(objlocation.current.weather_descriptions)
+        console.log(objlocation.current.weather_code)
+        console.log(objlocation.current.weather_icons)
+        console.log(objlocation.current.weather_descriptions.0)
         console.log(objlocation.current.wind_speed)
         console.log(objlocation.current.wind_dir)
         console.log(objlocation.current.humidity)
