@@ -4,7 +4,7 @@ const messageOne = document.querySelector('#message-1')
 const messageTwo = document.querySelector('#message-2')
 const messagetres = document.querySelector('#message-3')
 const messagecuatro = document.querySelector('#message-4')
-const contenidojson = 0
+var contenidojson = 0
 
 weatherForm.addEventListener('submit', (e) => {
     e.preventDefault()
