@@ -2,6 +2,8 @@ const weatherForm = document.querySelector('form')
 const search = document.querySelector('input')
 const messageOne = document.querySelector('#message-1')
 const messageTwo = document.querySelector('#message-2')
+const messagetres = document.querySelector('#message-3')
+const messagecuatro = document.querySelector('#message-4')
 
 weatherForm.addEventListener('submit', (e) => {
     e.preventDefault()
@@ -31,8 +33,8 @@ weatherForm.addEventListener('submit', (e) => {
       fetch('http://api.weatherstack.com/current?access_key=efb94ed60531139ab798b85c3653fbd0&query=' + location, requestOptions)
         .then(response => response.text())
         .then(result => 
-            messageOne.textContent = result.query
-            messageTwo.textContent = result.location     
+            messagetres.textContent = result.request
+            messagecuatro.textContent = result.location     
                         
             )
         .catch(error => console.log('error', error));
