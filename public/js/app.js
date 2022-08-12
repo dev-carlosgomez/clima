@@ -56,7 +56,7 @@ weatherForm.addEventListener('submit', (e) => {
 
         objlocation = JSON.parse(contenidojson)
         
-        clima1.textContent = 'Ciudad' + objlocation.location.name''
+        clima1.textContent = 'Ciudad' + objlocation.location.name
         clima2.textContent = 'País' + objlocation.location.country
         clima3.textContent = 'Hora actual' + objlocation.current.observation_time
         clima4.textContent = 'Temperatura: ' + objlocation.current.temperature
