@@ -32,4 +32,6 @@ weatherForm.addEventListener('submit', (e) => {
         objlocation = JSON.parse(contenidojson);
         messagetres.textContent = objlocation.location
 
+        console.log(objlocation.location)
+
 })
