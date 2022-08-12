@@ -19,6 +19,8 @@ weatherForm.addEventListener('submit', (e) => {
                 messageOne.textContent = data.location
                 messageTwo.textContent = data.forecast
                 alert("Mostrando resultados");
+                console.log(Object.keys(data));
+
             }
         })
     })
