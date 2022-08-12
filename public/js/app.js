@@ -28,7 +28,7 @@ weatherForm.addEventListener('submit', (e) => {
         redirect: 'follow'
       };
       
-      fetch("https://api.weatherstack.com/current?access_key=efb94ed60531139ab798b85c3653fbd0&query=New%20York", requestOptions)
+      fetch("http://api.weatherstack.com/current?access_key=efb94ed60531139ab798b85c3653fbd0&query=New%20York", requestOptions)
         .then(response => response.text())
         .then(result => console.log(result))
         .catch(error => console.log('error', error));
