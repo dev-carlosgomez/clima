@@ -24,7 +24,7 @@ weatherForm.addEventListener('submit', (e) => {
     messageTwo.textContent = ''
 
 
-    fetch('http://api.weatherstack.com/current?access_key=efb94ed60531139ab798b85c3653fbd0&query=' + location + '&units=m&language=es').then((response) => {
+    fetch('http://api.weatherstack.com/current?access_key=efb94ed60531139ab798b85c3653fbd0&query=' + location ).then((response) => {
         response.json().then((data) => {
             if (data.error) {
                 messageOne.textContent = data.error
