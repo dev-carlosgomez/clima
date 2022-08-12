@@ -16,7 +16,7 @@ weatherForm.addEventListener('submit', (e) => {
             if (data.error) {
                 messageOne.textContent = data.error
             } else {
-                messageOne.textContent = data.query
+                messageOne.textContent = data.error
                 messageTwo.textContent = data.location                
             }
         })
