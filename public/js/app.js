@@ -16,8 +16,8 @@ weatherForm.addEventListener('submit', (e) => {
             if (data.error) {
                 messageOne.textContent = data.error
             } else {
-                messageOne.textContent = data.response
-                messageTwo.textContent = data.result                
+                messageOne.textContent = data.query
+                messageTwo.textContent = data.location                
             }
         })
     })
@@ -30,8 +30,10 @@ weatherForm.addEventListener('submit', (e) => {
       
       fetch('http://api.weatherstack.com/current?access_key=efb94ed60531139ab798b85c3653fbd0&query=' + location, requestOptions)
         .then(response => response.text())
-        .then(result => console.log(result))
+        .then(result => 
+            messageOne.textContent = result.query
+            messageTwo.textContent = result.location     
+                        
+            )
         .catch(error => console.log('error', error));
-
-        alert(result); 
 })
