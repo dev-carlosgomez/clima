@@ -37,7 +37,19 @@ weatherForm.addEventListener('submit', (e) => {
         messagetres.textContent = objlocation.location
         messagecuatro.textContent = '...'
         
-        console.log(objlocation.location)
         console.log(objlocation.location.name)
+        console.log(objlocation.location.country)
+        console.log(objlocation.current.observation_time)
+        console.log(objlocation.current.temperature)
+        console.log(objlocation.current.whether_code)
+        console.log(objlocation.current.whether_icons)
+        console.log(objlocation.current.weather_descriptions)
+        console.log(objlocation.current.wind_speed)
+        console.log(objlocation.current.wind_dir)
+        console.log(objlocation.current.humidity)
+        console.log(objlocation.current.cloudcover)
+
+
+        
 
 })
