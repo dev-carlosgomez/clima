@@ -24,14 +24,14 @@ weatherForm.addEventListener('submit', (e) => {
     messageTwo.textContent = ''
 
 
-    fetch('http://api.weatherstack.com/current?access_key=efb94ed60531139ab798b85c3653fbd0&query=' + location).then((response) => {
+    fetch('http://api.weatherstack.com/current?access_key=efb94ed60531139ab798b85c3653fbd0&query=' + location + '&units=m&language=es').then((response) => {
         response.json().then((data) => {
             if (data.error) {
                 messageOne.textContent = data.error
             } else {
                 messageOne.textContent = data.error
                 messageTwo.textContent = 'Resultados: '   
-                clima1.textContent = '<h2>Ciudad:</h2> ' + data.location.name
+                clima1.textContent = '&lt;h2&gt;Ciudad:&lt;/h2&gt; ' + data.location.name
                 clima2.textContent = '<h2>País: </h2>' + data.location.country
                 clima3.textContent = '<h2>Hora actual: </h2>' + data.current.observation_time
                 clima4.textContent = '<h2>Temperatura: </h2>' + data.current.temperature
