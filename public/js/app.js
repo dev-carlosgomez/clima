@@ -44,17 +44,17 @@ weatherForm.addEventListener('submit', (e) => {
 
         objlocation = JSON.parse(contenidojson)
         
-        clima1.textContent = objlocation.location.name
-        clima2.textContent = objlocation.location.country
-        clima3.textContent = objlocation.current.observation_time
-        clima4.textContent = objlocation.current.temperature
-        clima5.textContent = objlocation.current.weather_code
+        clima1.textContent = 'Ciudad' + objlocation.location.name''
+        clima2.textContent = 'País' + objlocation.location.country
+        clima3.textContent = 'Hora actual' + objlocation.current.observation_time
+        clima4.textContent = 'Temperatura: ' + objlocation.current.temperature
+        clima5.textContent = 'Codigo: ' + objlocation.current.weather_code
 //        clima6.textContent = objlocation.current.weather_icons
-        clima6.textContent = objlocation.current.weather_descriptions
-        clima7.textContent = objlocation.current.wind_speed
-        clima8.textContent = objlocation.current.wind_dir
-        clima9.textContent = objlocation.current.humidity
-        clima10.textContent = objlocation.current.cloudcover
+        clima6.textContent = 'Clima:' + objlocation.current.weather_descriptions
+        clima7.textContent = 'Velocidad del viento: ' + objlocation.current.wind_speed
+        clima8.textContent = 'Dirección del viento:' + objlocation.current.wind_dir
+        clima9.textContent = 'Humedad:' + objlocation.current.humidity
+        clima10.textContent = 'Porcentaje de nubes:' + objlocation.current.cloudcover
 
 
         console.log(objlocation.location.name)
