@@ -11,21 +11,16 @@ weatherForm.addEventListener('submit', (e) => {
     messageOne.textContent = 'Loading...'
     messageTwo.textContent = ''
 
-   
-
-
-
-//opcion2
-
-var requestOptions = {
-    method: 'POST',
-    redirect: 'follow'
-  };
-  
-  fetch('https://api.weatherstack.com/current?access_key=efb94ed60531139ab798b85c3653fbd0&query=' + location, requestOptions)
-    .then(response => response.text())
-    .then(result => console.log(result))
-    .catch(error => console.log('error', error));
-
+    fetch('https://api.weatherstack.com/current?access_key=efb94ed60531139ab798b85c3653fbd0&query=' + location).then((response) => {
+        response.json().then((data) => {
+            if (data.error) {
+                messageOne.textContent = data.error
+            } else {
+                messageOne.textContent = response.text()
+                messageTwo.textContent = data.text()
+                
+            }
+        })
+    })
 
 })
