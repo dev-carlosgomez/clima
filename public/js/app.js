@@ -31,16 +31,16 @@ weatherForm.addEventListener('submit', (e) => {
             } else {
                 messageOne.textContent = data.error
                 messageTwo.textContent = 'Resultados: '   
-                clima1.textContent = '&lt;h2&gt;Ciudad:&lt;/h2&gt; ' + data.location.name
-                clima2.textContent = '<h2>País: </h2>' + data.location.country
-                clima3.textContent = '<h2>Hora actual: </h2>' + data.current.observation_time
-                clima4.textContent = '<h2>Temperatura: </h2>' + data.current.temperature
-                clima5.textContent = '<h2>Codigo: </h2>' + data.current.weather_code
-                clima6.textContent = '<h2>Clima: </h2>' + data.current.weather_descriptions
-                clima7.textContent = '<h2>Velocidad del viento: </h2>' + data.current.wind_speed
-                clima8.textContent = '<h2>Dirección del viento: </h2>' + data.current.wind_dir
-                clima9.textContent = '<h2>Humedad: </h2>' + data.current.humidity
-                clima10.textContent = '<h2>Porcentaje de nubes: </h2>' + data.current.cloudcover            
+                clima1.textContent = data.location.name
+                clima2.textContent = data.location.country
+                clima3.textContent = data.current.observation_time
+                clima4.textContent = data.current.temperature
+                clima5.textContent = data.current.weather_code
+                clima6.textContent = data.current.weather_descriptions
+                clima7.textContent = data.current.wind_speed
+                clima8.textContent = data.current.wind_dir
+                clima9.textContent = data.current.humidity
+                clima10.textContent = data.current.cloudcover            
             }
         })
     })
