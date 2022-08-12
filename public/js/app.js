@@ -33,7 +33,7 @@ weatherForm.addEventListener('submit', (e) => {
       fetch('http://api.weatherstack.com/current?access_key=efb94ed60531139ab798b85c3653fbd0&query=' + location, requestOptions)
       .then(response => response.text())
       .then(result => 
-        messageOne.textContent = result
+        messagetres.textContent = result
         )
       .catch(error => console.log('error', error));
 
