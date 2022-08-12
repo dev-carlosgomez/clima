@@ -38,8 +38,8 @@ weatherForm.addEventListener('submit', (e) => {
         messagetres.textContent = result.request
         )
       .catch(error => console.log('error', error));
-
-        console.log(request)
+        console.log("Respuesta: ")
+        console.log(result)
 
 
 })
