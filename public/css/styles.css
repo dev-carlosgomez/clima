@@ -19,10 +19,13 @@ body {
 }
 
 footer {
-    color: #888888;
+    color: #fff;
     border-top: 1px solid #eeeeee;
     margin-top: 16px;
     padding: 16px 0;
+    position: absolute;
+    bottom: 14px;
+    height: 20px;
 }
 
 header {
@@ -68,8 +71,9 @@ div#boxclimaresultados {
     margin: 10px;
     padding: 20px;
     border-radius: 10px;
-    min-height: 220px;
+    min-height: 205px;
     background-color: #ffffff2e;
+    box-shadow: 7px 5px 13px 3px rgb(0 0 0 / 30%);
 }
 h4#clima1 {
     font-size: 37px;
@@ -90,4 +94,38 @@ h4#clima4 {
 }
 h4#clima4::after {
     content: " ºF";
+}
+h2 {
+    text-shadow: 2px 1px 2px #0e67a7;
+}
+h4#clima3 {
+    font-size: 40px;
+    text-align: center;
+}
+h4#clima5 {
+    font-size: 40px;
+    text-align: center;
+}
+h4#clima6 {
+    font-size: 40px;
+    text-align: center;
+}
+h4#clima7 {
+    font-size: 40px;
+    text-align: center;
+}
+h4#clima8 {
+    font-size: 40px;
+    text-align: center;
+}
+h4#clima9 {
+    font-size: 40px;
+    text-align: center;
+}
+h4#clima10 {
+    font-size: 40px;
+    text-align: center;
+}
+h4 {
+    text-shadow: 2px 1px 2px #081218;
 }
