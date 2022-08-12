@@ -26,7 +26,7 @@ weatherForm.addEventListener('submit', (e) => {
         contenidojson = result
         )
       .catch(error => console.log('error', error));
-
+      messageOne.textContent = '...'
       messageTwo.textContent = 'Resultado: '
       
 
@@ -36,9 +36,8 @@ weatherForm.addEventListener('submit', (e) => {
         objlocation = JSON.parse(contenidojson)
         messagetres.textContent = objlocation.location
         messagecuatro.textContent = '...'
-
-        objlocationvalores = JSON.parse(objlocation)
-
-        console.log(objlocationvalores.name)
+        
+        console.log(objlocation.location)
+        console.log(objlocation.location.name)
 
 })
