@@ -15,6 +15,7 @@ weatherForm.addEventListener('submit', (e) => {
 
 
 
+
     var requestOptions = {
         method: 'POST',
         redirect: 'follow'
@@ -22,10 +23,8 @@ weatherForm.addEventListener('submit', (e) => {
       
       fetch('http://api.weatherstack.com/current?access_key=efb94ed60531139ab798b85c3653fbd0&query=' + location, requestOptions)
       .then(response => response.text())
-      .then(result => {
-        obj = JSON.parse(result)
-        messagetres.textContent = obj.request
-        }
+      .then(result => 
+        messagetres.textContent = result
         )
       .catch(error => console.log('error', error));
 
