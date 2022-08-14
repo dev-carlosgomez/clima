@@ -27,10 +27,10 @@ weatherForm.addEventListener('submit', (e) => {
     fetch('http://api.weatherstack.com/current?access_key=efb94ed60531139ab798b85c3653fbd0&query=' + location ).then((response) => {
         response.json().then((data) => {
             if (data.error) {
-                messageOne.textContent = data.error
+                messageOne.textContent = data.error.info
                 console.log(data.error)
             } else {
-                messageOne.textContent = data.error
+                messageOne.textContent = data.error.info
                 messageTwo.textContent = 'Resultados: '   
                 clima1.textContent = data.location.name
                 clima2.textContent = data.location.country
