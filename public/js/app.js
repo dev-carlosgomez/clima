@@ -30,7 +30,7 @@ weatherForm.addEventListener('submit', (e) => {
                 messageOne.textContent = data.error.info
                 console.log(data.error)
             } else {
-                messageOne.textContent = data.error.info
+                messageOne.textContent = ''
                 messageTwo.textContent = 'Resultados: '   
                 clima1.textContent = data.location.name
                 clima2.textContent = data.location.country
