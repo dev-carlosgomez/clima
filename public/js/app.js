@@ -28,6 +28,17 @@ weatherForm.addEventListener('submit', (e) => {
         response.json().then((data) => {
             if (data.error) {
                 messageOne.textContent = data.error.info
+                clima1.textContent = ''
+                clima2.textContent = ''
+                clima3.textContent = ''
+                clima4.textContent = ''
+                clima5.textContent = ''
+                clima6.textContent = ''
+                clima7.textContent = ''
+                clima8.textContent = ''
+                clima9.textContent = ''
+                clima10.textContent = ''            
+
                 console.log(data.error)
             } else {
                 messageOne.textContent = ''
